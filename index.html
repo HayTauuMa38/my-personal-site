@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My little corner of the web: a personal profile, what I am learning, and my first projects.">
+  <title>My Personal Site | Learning & Creating</title>
+  <!-- The stylesheet is a separate file, just like in the lesson. -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232449db'/%3E%3Ctext x='20' y='27' text-anchor='middle' font-family='Arial' font-size='24' fill='white'%3Em%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <!-- Each navigation link jumps to a section with a matching id. -->
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">m.</span> My Personal Site</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a class="github-link" href="https://github.com/">Explore GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section id="about" class="intro-section">
+      <div class="intro">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <!-- Replace "Your Name" and this introduction with your own details. -->
+        <h1>Hi, I’m<br><span>Your Name.</span></h1>
+        <p class="intro-text">A curious learner turning small ideas into things for the web.</p>
+        <p>I’m learning <b>HTML and CSS</b>, exploring how websites work, and enjoying the process of making something my own. Welcome to my little corner of the internet.</p>
+        <a class="button" href="#projects">See my projects <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="photo-panel">
+        <img src="workspace.jpg" alt="A bright workspace with a laptop displaying code, headphones, a coffee mug, and a plant" width="1600" height="1000">
+        <div class="photo-caption"><span>My next chapter</span><b>Learn. Try. Create.</b></div>
+      </div>
+    </section>
+
+    <!-- Reusing the same class gives these div containers matching styles. -->
+    <div class="about-details">
+      <div class="detail"><span class="detail-number">01 /</span><h2>What I’m learning</h2><p>Building a strong foundation with HTML structure and CSS styling.</p></div>
+      <div class="detail"><span class="detail-number">02 /</span><h2>What I enjoy</h2><p>Creative ideas, thoughtful design, and figuring out how things work.</p></div>
+      <div class="detail"><span class="detail-number">03 /</span><h2>My approach</h2><p><i>One small step at a time.</i> Experiment, make mistakes, and keep learning.</p></div>
+    </div>
+
+    <section id="projects" class="projects-section">
+      <div class="section-heading"><div><p class="eyebrow">LEARNING BY DOING</p><h2>Small projects.<br>New possibilities.</h2></div><p>Every project starts with a little curiosity.<br>Here’s the beginning of my journey.</p></div>
+      <div class="project-grid">
+        <div class="project-card" id="first-project">
+          <div class="project-top"><span class="project-number">01</span><span class="tag">First project</span></div>
+          <h3>My personal page</h3>
+          <p>The page you’re exploring now: an introduction, a few interests, and a place for my projects.</p>
+          <div class="project-bottom"><span>HTML · CSS</span><a href="#about">Explore the page <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="project-card future-project">
+          <div class="project-top"><span class="project-number">02</span><span class="tag">Up next</span></div>
+          <h3>My next idea</h3>
+          <p>A space for whatever I build next. A favorite recipe, a photo gallery, or something entirely new.</p>
+          <div class="project-bottom"><span>Still imagining</span><span aria-hidden="true">✳</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><p><b>m.</b> Made with curiosity & a little HTML.</p><p>Photo by <a href="https://unsplash.com/photos/m_HRfLhgABo">Christopher Gower</a> <span aria-hidden="true">·</span> <a href="#home">Back to top ↑</a></p></footer>
+</body>
+</html>
